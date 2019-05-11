@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(value = "hello-spring-cloud-service-admin")
+@FeignClient(value = "hello-spring-cloud-service-admin",fallback =  AdminServiceHystrix.class)
 public interface AdminService {
     @RequestMapping(value = "hello", method = RequestMethod.GET)
     public String sayHello(@RequestParam(value = "message") String message);
