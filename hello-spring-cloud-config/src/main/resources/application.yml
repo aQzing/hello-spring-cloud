@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: hello-spring-cloud-config
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/aQzing/spring-cloud-config
+          search-paths: hello-spring-cloud-config
+          username: 1107382263@qq.com
+          password: 
+
+server:
+  #端口必须新建bootstrap.properties里面更改
+  port: 8888
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
