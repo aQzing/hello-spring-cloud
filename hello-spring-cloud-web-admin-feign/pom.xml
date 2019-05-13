@@ -71,7 +71,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>cn.itqzing.hello.spring.cloud.web.admin.feign.WebAdminFeignApplication</mainClass>
+                    <mainClass>cn.itqzing.hello.spring.cloud.zuul.web.admin.feign.WebAdminFeignApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>
